@@ -9,8 +9,8 @@ import javax.swing.SwingUtilities;
 public class MainPainel extends JFrame {
 
     public MainPainel() throws HeadlessException {
-//        Board board = new Board(30, 16, 99);
-        Board board = new Board(3, 3, 2);
+        Board board = new Board(30, 16, 99);
+//        Board board = new Board(3, 3, 2);
         add(new MinesweepeBoard(board));
 
         board.addObserver((gameState) -> {
